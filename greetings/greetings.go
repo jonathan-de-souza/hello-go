@@ -31,7 +31,7 @@ func randomFormat() string {
 // function not in the same module
 func Hello(name string) (string, error) {
 	// If no name was given, return an error with a message.
-	if name == "" {
+  if name == "" {
 		return "", errors.New("empty name")
 	}
 
@@ -57,7 +57,7 @@ func Hellos(names []string) (map[string]string, error) {
 		message, err := Hello(name)
 		if err != nil {
 			return nil, err
-		}
+	  }
 
 		// In the map, associate the retrieved message with
 		// the name.
